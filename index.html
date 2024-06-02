@@ -141,7 +141,7 @@
 
 
     <!-- Comienzo de la reserva -->
-    <div class="container-fluid booking mt-5 pb-5">
+    <form class="container-fluid booking mt-5 pb-5">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
@@ -149,7 +149,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select class="custom-select px-4" style="height: 47px;" name="Destino">
                                         <option selected>Destino</option>
                                         <option value="1">Destino 1</option>
                                         <option value="2">Destino 2</option>
@@ -160,20 +160,20 @@
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de ida" data-target="#date1" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de ida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de ida"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de vuelta" data-target="#date2" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de vuelta" data-target="#date2" data-toggle="datetimepicker" name="Fecha de vuelta"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select class="custom-select px-4" style="height: 47px;" name="Duración">
                                         <option selected>Duración</option>
                                         <option value="1">Duración 1</option>
                                         <option value="2">Duración 2</option>
@@ -189,7 +189,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
     <!-- Fin de la reserva -->
 
 
