@@ -35,10 +35,11 @@
 
     // Date and time picker
     $('.date').datetimepicker({
-        format: 'L'
-    });
+        format: 'DD/MM/YYYY',
+        locale: 'es'
+    });    
     $('.time').datetimepicker({
-        format: 'LT'
+        format: 'HH:mm'
     });
 
 

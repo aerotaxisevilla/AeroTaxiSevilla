@@ -142,6 +142,7 @@
 
     <!-- Comienzo de la reserva -->
     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
+        <input type="hidden" name="_template" value="table">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
@@ -149,37 +150,26 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;" name="Destino">
-                                        <option selected>Destino</option>
-                                        <option value="1">Destino 1</option>
-                                        <option value="2">Destino 2</option>
-                                        <option value="3">Destino 3</option>
-                                    </select>
+                                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="email"/>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="hidden" name="_template" value="table">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de ida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de ida"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de vuelta" data-target="#date2" data-toggle="datetimepicker" name="Fecha de vuelta"/>
+                                    <div class="time" id="time1" data-target-input="nearest">
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hora" data-toggle="datetimepicker" data-target="#time1" name="Hora"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;" name="Duración">
-                                        <option selected>Duración</option>
-                                        <option value="1">Duración 1</option>
-                                        <option value="2">Duración 2</option>
-                                        <option value="3">Duración 3</option>
-                                    </select>
+                                    <input type="text" placeholder="Destino" class="form-control p-4 datetimepicker-input" name="Destino"/>
                                 </div>
                             </div>
                         </div>
