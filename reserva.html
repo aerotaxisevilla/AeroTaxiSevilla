@@ -9,7 +9,7 @@
     <meta content="AeroTaxiSevilla, ¡Reserva tu taxi ya!" name="description">
 
     <!-- logo -->
-    <link href="img/logotitulo.png" rel="icon">
+    <link href="img/logotitulo.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -83,10 +83,10 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Utilidades</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Sevilla</a>
-                                <a href="single.html" class="dropdown-item">Aeropuerto</a>
-                                <a href="destination.html" class="dropdown-item">Distancias cortas</a>
-                                <a href="guide.html" class="dropdown-item">Distancias largas</a>
+                                <a href="https://www.sevilla.org/" target="_blank" class="dropdown-item">Ayuntamiento de sevilla</a>
+                                <a href="https://www.aena.es/es/sevilla.html" target="_blank" class="dropdown-item">Aeropuerto</a>
+                                <a href="https://www.google.es/maps/" target="_blank" class="dropdown-item">Google Maps</a>
+                                <a href="https://es.distance.to/" target="_blank" class="dropdown-item">Calculadora de distancia</a>
                                 <a href="testimonial.html" class="dropdown-item">Reseñas</a>
                             </div>
                         </div>
@@ -127,36 +127,37 @@
                         <div class="column">
                             <div class="col-md-3-1">
                                 <div class="mb-3 mb-md-0">
-                                    <h5>Email</h5><input type="email" placeholder="Indique un Email" class="form-control p-4 datetimepicker-input" name="Email"/>
+                                    <h5>Email</h5><input type="email" placeholder="Indique un Email" class="form-control p-4 datetimepicker-input" name="Email" required/>
                                 </div>
                             </div>
                             <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
-                                    <h5>Teléfono</h5><input type="tel" placeholder="Indique un teléfono" class="form-control p-4 datetimepicker-input" name="Teléfono"/>
+                                    <h5>Teléfono</h5><input type="tel" placeholder="Indique un teléfono" class="form-control p-4 datetimepicker-input" name="Teléfono" required/>
                                 </div>
                             </div>
                             <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <h5>Fecha de recogida</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida"/>
+                                        <h5>Fecha de recogida</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
                                     <div class="time" id="time1" data-target-input="nearest">
-                                        <h5>Hora</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una hora" data-toggle="datetimepicker" data-target="#time1" name="Hora"/>
+                                        <h5>Hora</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una hora" data-toggle="datetimepicker" data-target="#time1" name="Hora" required/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
-                                    <h5>Destino</h5><input type="text" placeholder="Indique un destino" class="form-control p-4 datetimepicker-input" name="Destino"/>
+                                    <h5>Destino</h5><input type="text" placeholder="Indique un destino" class="form-control p-4 datetimepicker-input" name="Destino" required/>
                                 </div>
                             </div>
                             <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
-                                    <h5>Observaciones</h5><input type="text" placeholder="Escriba aquí sus observaciones" class="form-control p-4 datetimepicker-input" name="Observaciones"/>
+                                    <h5>Observaciones</h5><textarea class="form-control py-3 px-4" rows="5" id="Observación" placeholder="Inserte una observación si lo requiere"
+                                    data-validation-required-message="Porfavor inserta una observación"></textarea>
                                 </div>
                             </div>
                         </div>
