@@ -114,6 +114,7 @@
     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="Nuevo servicio">
+        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks.html">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
@@ -160,13 +161,15 @@
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Contacto</h6>
-                <h1>Contactanos para cualquier cuestión</h1>
+                <h1>Contactenos para cualquier cuestión</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form bg-white" style="padding: 30px;">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
