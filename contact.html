@@ -170,25 +170,26 @@
                         <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" id="contactForm">
                             <input type="hidden" name="_template" value="table">
                             <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+                            <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks.html">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
+                                    <input name="Nombre" type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
                                         required="required" data-validation-required-message="Porfavor introduzca su nombre" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Su email"
+                                    <input name="Email" type="email" class="form-control p-4" id="email" placeholder="Su email"
                                         required="required" data-validation-required-message="Porfavor introduzca su email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="Asunto" placeholder="Asunto"
+                                <input name="Asunto" type="text" class="form-control p-4" id="Asunto" placeholder="Asunto"
                                     required="required" data-validation-required-message="Porfavor introduzca un asunto" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Mensaje"
+                                <textarea name="Mensaje" class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Mensaje"
                                     required="required"
                                     data-validation-required-message="Porfavor introduzca su mensaje"></textarea>
                                 <p class="help-block text-danger"></p>
@@ -250,12 +251,12 @@
                 <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Enterate de nuevas noticias</h6>
                 <div class="w-100">
-                    <div class="input-group">
+                    <form class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tú Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-3">Enviar email</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
