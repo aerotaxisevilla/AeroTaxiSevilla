@@ -6,7 +6,7 @@
     <title>AeroTaxiSevilla</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="aerotaxisevilla" name="keywords">
-    <meta content="AeroTaxiSevilla, ¡Reserva tu taxi ya!" name="description">
+    <meta content="AeroTaxiSevilla, Book your taxi now!" name="description">
 
     <!-- logo -->
     <link href="img/logotitulo.ico" rel="icon">
@@ -70,22 +70,22 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
-                        <a href="service.html" class="nav-item nav-link">Servicios</a>
-                        <a href="reserva.html" class="nav-item nav-link">Reserva</a>
+                        <a href="english_index.html" class="nav-item nav-link">Home</a>
+                        <a href="english_about.html" class="nav-item nav-link">About us</a>
+                        <a href="english_service.html" class="nav-item nav-link">Services</a>
+                        <a href="english_reserva.html" class="nav-item nav-link">Booking</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Utilidades</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Utilities</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="https://www.sevilla.org/" target="_blank" class="dropdown-item">Ayuntamiento de sevilla</a>
-                                <a href="https://www.aena.es/es/sevilla.html" target="_blank" class="dropdown-item">Aeropuerto</a>
+                                <a href="https://www.sevilla.org/" target="_blank" class="dropdown-item">Seville local government</a>
+                                <a href="https://www.aena.es/es/sevilla.html" target="_blank" class="dropdown-item">Airport</a>
                                 <a href="https://www.google.es/maps/" target="_blank" class="dropdown-item">Google Maps</a>
-                                <a href="https://es.distance.to/" target="_blank" class="dropdown-item">Calculadora de distancia</a>
-                                <a href="testimonial.html" class="dropdown-item">Reseñas</a>
+                                <a href="https://es.distance.to/" target="_blank" class="dropdown-item">Distance calculator</a>
+                                <a href="english_testimonial.html" class="dropdown-item active">Reviews</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        <a href="englishindex.html" class="nav-item nav-link"><img src="img/banderaspain.png" alt="Cambiar idioma"></a>
+                        <a href="english_contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="testimonial.html" class="nav-item nav-link"><img src="img/banderaspain.png" alt="Cambiar idioma"></a>
                     </div>
                 </div>
             </nav>
@@ -98,11 +98,11 @@
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Reseñas</h3>
+                <h3 class="display-4 text-white text-uppercase">Reviews</h3>
                 <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
+                    <p class="m-0 text-uppercase"><a class="text-white" href="english_index.html">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Reseñas</p>
+                    <p class="m-0 text-uppercase">Reviews</p>
                 </div>
             </div>
         </div>
@@ -113,8 +113,8 @@
     <!-- Comienzo de la reserva -->
     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="Nuevo servicio">
-        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks.html">
+        <input type="hidden" name="_subject" value="Nuevo servicio extranjero">
+        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks.html">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
@@ -128,26 +128,26 @@
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required="required"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pick up date" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required="required"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
                                     <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hora" data-toggle="datetimepicker" data-target="#time1" name="Hora" required="required"/>
+                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hour" data-toggle="datetimepicker" data-target="#time1" name="Hora" required="required"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="mb-3 mb-md-0">
-                                    <input type="text" placeholder="Destino" class="form-control p-4 datetimepicker-input" name="Destino" required="required"/>
+                                    <input type="text" placeholder="Destination" class="form-control p-4 datetimepicker-input" name="Destino" required="required"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
                     </div>
                 </div>
             </div>
@@ -160,44 +160,44 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reseñas</h6>
-                <h1>¿Qué opinan nuestros clientes?</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reviews</h6>
+                <h1>What do our clients think?</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
                     <img class="img-fluid mx-auto" src="https://lh3.googleusercontent.com/a/ACg8ocIJlV3W2shd3RnegG6QxkB2A8eGYuwRwWNuZHvWDgtFxncQtg=w60-h60-p-rp-mo-br100" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Extraordinario el servicio. Llegan a la hora prevista. Son super atentos y eficientes. Totalmente recomendable
+                        <p class="mt-5">Extraordinary service. They arrive at the scheduled time. They are super attentive and efficient. Totally recommended
                         </p>
                         <h5 class="text-truncate">Emilia Cuberos González</h5>
-                        <span>Hace 2 meses</span>
+                        <span>2 months ago</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="https://lh3.googleusercontent.com/a-/ALV-UjUvNqlhqikjMNlRRo3AUmESjk5lKrKWIqEKzGck28q5D02nIns=w60-h60-p-rp-mo-ba3-br100" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Magnifico servicio de reserva previa. Reservé un taxi para una hora concreta y funcionó todo fenomenal. Amabilísimos en todo el proceso, desde la operadora al taxista. Y puntual 100%.Repetiré siempre q lo necesite. Sin duda.
+                        <p class="mt-5">Magnificent pre-booking service. I booked a taxi for a specific time and everything worked out great. Very friendly throughout the entire process, from the operator to the taxi driver. And 100% punctual. I will repeat it whenever I need it. Definitely.
                         </p>
                         <h5 class="text-truncate">Carmen Ríos Bonnín</h5>
-                        <span>Hace 7 meses</span>
+                        <span>7 months ago</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="https://lh3.googleusercontent.com/a-/ALV-UjU2rNFZpQPjY30JnAv9ppEBYeaoKkeC5ivKQUTxdHNJbZWisyfCfQ=w60-h60-p-rp-mo-ba6-br100" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Servicio rápido , taxistas competentes y de precio no ha sido tan caro , muy parecidos a otros servicios de coche en los mismos horarios y las mismas distancias . La atención óptima además para moverte y demás !
+                        <p class="mt-5">Fast service, competent taxi drivers and the price has not been so expensive, very similar to other car services at the same times and the same distances. Optimal care also for moving and so on!
                         </p>
                         <h5 class="text-truncate">MeryLQ</h5>
-                        <span>Hace 4 meses</span>
+                        <span>4 months ago</span>
                     </div>
                 </div>
                 <div class="text-center">
                     <img class="img-fluid mx-auto" src="https://lh3.googleusercontent.com/a/ACg8ocJSWoMqZWXC6bazCeuKb7BcV2EUoUyHbV4VOLowLJWTQ4_q4Q=w60-h60-p-rp-mo-br100" style="width: 100px; height: 100px;" >
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Súper profesionales. Puedes pedir el taxi para un día concreto y una hora como me pasó a mí . No fallan .
+                        <p class="mt-5">Super professionals. You can order the taxi for a specific day and time like it happened to me. They don't fail.
                         </p>
                         <h5 class="text-truncate">Raquel Gonzalez Exposito</h5>
-                        <span>Hace 4 meses</span>
+                        <span>4 months ago</span>
                     </div>
                 </div>
             </div>
@@ -209,8 +209,8 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reseñas</h6>
-                <h1>Mandenos una reseña de su viaje</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Reviews</h6>
+                <h1>Send us a review of your trip</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -218,28 +218,28 @@
                         <div id="success"></div>
                         <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" id="contactForm">
                             <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_subject" value="Nueva reseña">
+                            <input type="hidden" name="_subject" value="Nueva reseña extranjera">
                             <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input name="Nombre" type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
-                                        required="required" data-validation-required-message="Porfavor introduzca su nombre" />
+                                    <input name="Nombre" type="text" class="form-control p-4" id="Nombre" placeholder="Your name"
+                                        required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input name="Email" type="email" class="form-control p-4" id="email" placeholder="Su email"
-                                        required="required" data-validation-required-message="Porfavor introduzca su email" />
+                                    <input name="Email" type="email" class="form-control p-4" id="email" placeholder="Your email"
+                                        required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <textarea name="Reseña" class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Reseña"
+                                <textarea name="Reseña" class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Review"
                                     required="required"
-                                    data-validation-required-message="Porfavor introduzca su reseña"></textarea>
+                                    data-validation-required-message="Please enter your review"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Enviar reseña</button>
+                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send review</button>
                             </div>
                         </form>
                     </div>
@@ -256,8 +256,8 @@
                 <a href="index.html" class="navbar-brand">
                     <h1 class="m-0 text-primary"><span class="text-white">Aero</span>Taxi<span class="text-white">Sevilla</span></h1>
                 </a>
-                <p>Desde Sevilla hasta cualquier parte, dentro o fuera de España</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Síguenos</h6>
+                <p>From Seville to anywhere, inside or outside Spain</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow us</h6>
                 <div class="d-flex justify-content-start">
                     <a target="_blank" class="btn btn-outline-primary btn-square mr-2" href="https://api.whatsapp.com/send?phone=+34600999999&text=%C2%A1Buenas%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20de%20AeroTaxiSevilla%20a%20traves%20de%20Whatsapp!"><i class="fab fa-whatsapp"></i></a>
                     <a target="_blank" class="btn btn-outline-primary btn-square" href="https://www.instagram.com/aerotaxisevilla/"><i class="fab fa-instagram"></i></a>
@@ -271,30 +271,30 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Links útiles</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Useful links</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sobre nosotros</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Reserva</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Conductores</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Reseñas</a>
+                    <a class="text-white-50 mb-2" href="english_about.html"><i class="fa fa-angle-right mr-2"></i>About us</a>
+                    <a class="text-white-50 mb-2" href="english_service.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="english_reserva.html"><i class="fa fa-angle-right mr-2"></i>Booking</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Drivers</a>
+                    <a class="text-white-50 mb-2" href="english_testimonial.html"><i class="fa fa-angle-right mr-2"></i>Reviews</a>
                     <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contactanos</h5>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact us</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i>123 Sevilla</p>
                 <p><a href="tel:+03434567890"><i class="fa fa-phone-alt mr-2"></i>+034 345 67890</a></p>
                 <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Enterate de nuevas noticias</h6>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Find out new news</h6>
                 <div class="w-100">
                     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="input-group">
                         <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_subject" value="Nuevo cliente interesado en noticias">
-                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
-                        <input type="email" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Tú Email">
+                        <input type="hidden" name="_subject" value="Nuevo cliente extranjero interesado en noticias">
+                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks_news.html">
+                        <input type="email" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
                         <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary px-3">Enviar email</button>
+                            <button type="submit" class="btn btn-primary px-3">Send email</button>
                         </div>
                     </form>
                 </div>
