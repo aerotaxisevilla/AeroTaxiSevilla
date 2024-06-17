@@ -62,7 +62,7 @@
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
                 <img src="img/logotitulo.png" alt="Logo" width="70px" height="70px">
-                <a href="" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <h1 class="m-0 text-primary"><span class="text-dark">Aero</span>Taxi<span class="text-dark">Sevilla</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -105,7 +105,7 @@
     <!-- Header End -->
 
 
-    <!-- Comienzo de la reserva -->
+    <!-- Comienzo del titulo -->
     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="Nuevo servicio">
@@ -117,7 +117,7 @@
             </div>
         </div>
     </form>
-    <!-- Fin de la reserva -->
+    <!-- Fin del titulo -->
 
     <!-- Comienzo de sobre nosotros -->
     <div class="container-fluid py-5">
@@ -140,6 +140,61 @@
     </div>
     <!-- Fin de sobre nosotros -->
 
+    <!-- Comienzo reserva --> 
+    <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Nuevo servicio detallado">
+        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks.html">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-12">
+                        <div class="column">
+                            <div class="col-md-3-1">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Email</h5><input type="email" placeholder="Indique un Email" class="form-control p-4 datetimepicker-input" name="Email" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Teléfono</h5><input type="tel" placeholder="Indique un teléfono" class="form-control p-4 datetimepicker-input" name="Teléfono" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <h5>Fecha de recogida</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <div class="time" id="time1" data-target-input="nearest">
+                                        <h5>Hora</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una hora" data-toggle="datetimepicker" data-target="#time1" name="Hora" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Destino</h5><input type="text" placeholder="Indique un destino" class="form-control p-4 datetimepicker-input" name="Destino" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Observaciones</h5><textarea class="form-control py-3 px-4" rows="5" id="Observación" placeholder="Inserte una observación si lo requiere"
+                                    data-validation-required-message="Porfavor inserta una observación"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3-2">
+                        <button class="btn btn-primary btn-block btn-center" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Booking End -->
 
     <!-- Contact Start -->
     <div class="container-fluid py-5">
@@ -232,7 +287,7 @@
                     <form class="input-group">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Nuevo cliente interesado en noticias">
-                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_contact.html">
+                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
                         <input type="text" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Tú Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-3">Enviar email</button>
