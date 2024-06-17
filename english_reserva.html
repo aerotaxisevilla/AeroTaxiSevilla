@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sobre nosotros</title>
+    <title>Reserva</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="aerotaxisevilla" name="keywords">
-    <meta content="AeroTaxiSevilla, Información sobre la empresa" name="description">
+    <meta content="AeroTaxiSevilla, ¡Reserva tu taxi ya!" name="description">
 
-    <!-- Favicon -->
+    <!-- logo -->
     <link href="img/logotitulo.ico" rel="icon">
 
     <!-- Google Web Fonts -->
@@ -71,9 +71,9 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Inicio</a>
-                        <a href="about.html" class="nav-item nav-link active">Sobre nosotros</a>
+                        <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
                         <a href="service.html" class="nav-item nav-link">Servicios</a>
-                        <a href="reserva.html" class="nav-item nav-link">Reserva</a>
+                        <a href="reserva.html" class="nav-item nav-link active">Reserva</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Utilidades</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -85,7 +85,7 @@
                             </div>
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                        <a href="english_about.html" class="nav-item nav-link"><img src="img/banderaeng.png" alt="Change languaje"></a>
+                        <a href="englishindex.html" class="nav-item nav-link"><img src="img/banderaspain.png" alt="Cambiar idioma"></a>
                     </div>
                 </div>
             </nav>
@@ -94,243 +94,233 @@
     <!-- Final de la barra de navegación -->
 
 
-    <!-- Header Start -->
+    <!-- Comienzo cabecera -->
     <div class="container-fluid page-header">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Sobre nosotros</h3>
+                <h3 class="display-4 text-white text-uppercase">Reserva</h3>
                 <div class="d-inline-flex text-white">
                     <p class="m-0 text-uppercase"><a class="text-white" href="index.html">Inicio</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Sobre nosotros</p>
+                    <p class="m-0 text-uppercase">Reserva</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
+    <!-- Final cabecera -->
 
 
-    <!-- Comienzo de la reserva -->
+    <!-- Comienzo reserva --> 
     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="Nuevo servicio">
+        <input type="hidden" name="_subject" value="Nuevo servicio detallado">
         <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks.html">
         <div class="container pb-5">
             <div class="bg-light shadow" style="padding: 30px;">
                 <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
+                    <div class="col-md-12">
+                        <div class="column">
+                            <div class="col-md-3-1">
                                 <div class="mb-3 mb-md-0">
-                                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="Email" required="required"/>
+                                    <h5>Email</h5><input type="email" placeholder="Indique un Email" class="form-control p-4 datetimepicker-input" name="Email" required/>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Teléfono</h5><input type="tel" placeholder="Indique un teléfono" class="form-control p-4 datetimepicker-input" name="Teléfono" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
                                     <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required="required"/>
+                                        <h5>Fecha de recogida</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una fecha de recogida" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
                                     <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hora" data-toggle="datetimepicker" data-target="#time1" name="Hora" required="required"/>
+                                        <h5>Hora</h5><input type="text" class="form-control p-4 datetimepicker-input" placeholder="Indique una hora" data-toggle="datetimepicker" data-target="#time1" name="Hora" required/>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3-2">
                                 <div class="mb-3 mb-md-0">
-                                    <input type="text" placeholder="Destino" class="form-control p-4 datetimepicker-input" name="Destino" required="required"/>
+                                    <h5>Destino</h5><input type="text" placeholder="Indique un destino" class="form-control p-4 datetimepicker-input" name="Destino" required/>
+                                </div>
+                            </div>
+                            <div class="col-md-3-2">
+                                <div class="mb-3 mb-md-0">
+                                    <h5>Observaciones</h5><textarea class="form-control py-3 px-4" rows="5" id="Observación" placeholder="Inserte una observación si lo requiere"
+                                    data-validation-required-message="Porfavor inserta una observación"></textarea>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
+                    <div class="col-md-3-2">
+                        <button class="btn btn-primary btn-block btn-center" type="submit" style="height: 47px; margin-top: -2px;">Solicitar</button>
                     </div>
                 </div>
             </div>
         </div>
     </form>
-    <!-- Fin de la reserva -->
+    <!-- Booking End -->
 
 
-    <!-- Comienzo de sobre nosotros -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/giraldaver.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre nosotros</h6>
-                        <h1 class="mb-3">Cuidando nuestro equipo de trabajo para nuestros clientes</h1>
-                        <p>Nuestro equipo de trabajo cuenta con supervisión constante para brindar el mejor servicio posible a nuestros clientes</p>
-                        <div class="row mb-4">
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/taxicorolla.png" alt="corolla">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="img/taxieuro.png" alt="eurotaxi" height="85%" width="85%">
-                            </div>
-                        </div>
-                        <a href="service.html" class="btn btn-primary mt-1">Solicita servicios</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fin de sobre nosotros -->
-
-
-    <!-- Feature Start -->
-    <div class="container-fluid pb-5">
-        <div class="container pb-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-3x fa-money-check-alt text-white"></i>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <h5 class="">Precios adecuados</h5>
-                            <p class="m-0">Precios estipulados según la tarifa vigente, reguladas por el ayuntamiento de Sevilla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-3x fa-award text-white"></i>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <h5 class="">Servicios de calidad</h5>
-                            <p class="m-0">Aseguramos un servicio adecuado con la máxima calidad posible.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
-                            <i class="fa fa-3x fa-route text-white"></i>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <h5 class="">Viajes largos</h5>
-                            <p class="m-0">Aportamos un servicio de transporte cómodo y fiable, hacia cualquier destino</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Feature End -->
-
-
-    <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
-                    <div class="mb-4">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Super ofertas</h6>
-                        <h1 class="text-white"><span class="text-primary">Increibles ofertas</span> Por tu registro</h1>
-                    </div>
-                    <p class="text-white">Al registrarse con su correo electrónico podremos avisarle de las mejores que esta empresa pueda ofrecerle al instante,
-                        este registro no supone ningún tipo de coste ni de compromiso, ¡Le esperamos!
-                    </p>
-                    <ul class="list-inline text-white m-0">
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Radidez de respuesta</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Increibles ofertas</li>
-                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Cero compromiso</li>
-                    </ul>
-                </div>
-                <div class="col-lg-5">
-                    <div class="card border-0">
-                        <div class="card-header bg-primary text-center p-4">
-                            <h1 class="text-white m-0">¡Regístrese ahora!</h1>
-                        </div>
-                        <div class="card-body rounded-bottom bg-white p-5">
-                            <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post">
-                                <input type="hidden" name="_template" value="table">
-                                <input type="hidden" name="_subject" value="Nuevo cliente registrado">
-                                <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_registration.html">
-                                <div class="form-group">
-                                    <input type="text" name="Nombre" class="form-control p-4" placeholder="Su nombre" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="Email" class="form-control p-4" placeholder="Su email" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select px-4" name="Uso del servicio" style="height: 47px;">
-                                        <option selected>Uso del servicio</option>
-                                        <option value="Uso propio">Uso propio</option>
-                                        <option value="Uso familiar">Uso familiar</option>
-                                        <option value="Uso vacacional">Uso vacacional</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary btn-block py-3" type="submit">Registarse</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Registration End -->
-
-
-    <!-- Team Start -->
+    <!-- Packages Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Conductores</h6>
-                <h1>Nuestros mejores conductores</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Tarifas</h6>
+                <h1>Precios de los servicios</h1>
             </div>
-            <div class="row" style="justify-content: center;">
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/avatar.webp" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package-1.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sevilla</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>Sin hora concreta</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>4 personas</small>
                             </div>
-                        </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Luis Pérez Silva</h5>
-                            <p class="m-0">Letra A</p>
+                            <div class="h5 text-decoration-none">Carrera básica</div>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">Sujeto a tarifas</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
-                    <div class="team-item bg-white mb-4">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/avatar.webp" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package-2.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sevilla</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>Hora concertada</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>4 Personas</small>
+                            </div>
+                            <div class="h5 text-decoration-none">Taxi concertado</div>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">24,98 € L-V</h5>
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center py-4">
-                            <h5 class="text-truncate">Fran Casá Chamorro</h5>
-                            <p class="m-0">Letra ?</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package-3.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sevilla</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>Concertada o no</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>4 Personas</small>
+                            </div>
+                            <div class="h5 text-decoration-none">Distancias largas</div>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">Sujeto a tarifas</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package-4.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Sevilla</small>
+                                <small class="m-0"><i class="fa fa-taxi text-primary mr-2"></i>RadioTaxi</small>
+                            </div>
+                            <div class="h5 text-decoration-none">Descubre nuestras tarifas</div>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-center">
+                                    <h5 class="m-0"><i class="fa fa-file text-primary mr-2"></i><a href="pdf/TarifasRadioTaxi.pdf" target="_blank">Tarifas</a></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Team End -->
+    <!-- Packages End -->
+
+
+    <!-- Destinos Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destinos</h6>
+                <h1>Trabajamos con los mejores destinos</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-1.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Sevilla</h5>
+                            <span>Hasta otras provincias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-2.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Cádiz</h5>
+                            <span>Desde sevilla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-3.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Cualquier parte de España</h5>
+                            <span>Desde sevilla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-4.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Pueblos en Sevilla</h5>
+                            <span>Desde sevilla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-5.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Pueblos en Cádiz</h5>
+                            <span>Desde sevilla</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="img/destination-6.jpg" alt="">
+                        <div class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Madrid y Barcelona</h5>
+                            <span>Desde sevilla</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
 
 
     <!-- Footer Start -->
@@ -398,7 +388,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
 
     <!-- Back to Top -->
