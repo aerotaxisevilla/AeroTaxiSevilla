@@ -167,14 +167,15 @@
                             <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post">
                                 <input type="hidden" name="_template" value="table">
                                 <input type="hidden" name="_subject" value="Nuevo cliente registrado">
+                                <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_registration.html">
                                 <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Su nombre" required="required" />
+                                    <input type="text" name="Nombre" class="form-control p-4" placeholder="Su nombre" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Su email" required="required" />
+                                    <input type="email" name="Email" class="form-control p-4" placeholder="Su email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
+                                    <select class="custom-select px-4" name="Uso del servicio" style="height: 47px;">
                                         <option selected>Uso del servicio</option>
                                         <option value="1">Uso propio</option>
                                         <option value="2">Uso familiar</option>
@@ -204,28 +205,29 @@
                 <div class="col-lg-8">
                     <div class="contact-form bg-white" style="padding: 30px;">
                         <div id="success"></div>
-                        <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" id="contactForm">
                             <input type="hidden" name="_template" value="table">
                             <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+                            <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
+                                    <input name="Nombre" type="text" class="form-control p-4" id="Nombre" placeholder="Su nombre"
                                         required="required" data-validation-required-message="Porfavor introduzca su nombre" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Su email"
+                                    <input name="Email" type="email" class="form-control p-4" id="email" placeholder="Su email"
                                         required="required" data-validation-required-message="Porfavor introduzca su email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="Asunto" placeholder="Asunto"
+                                <input name="Asunto" type="text" class="form-control p-4" id="Asunto" placeholder="Asunto"
                                     required="required" data-validation-required-message="Porfavor introduzca un asunto" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Mensaje"
+                                <textarea name="Mensaje" class="form-control py-3 px-4" rows="5" id="Mensaje" placeholder="Mensaje"
                                     required="required"
                                     data-validation-required-message="Porfavor introduzca su mensaje"></textarea>
                                 <p class="help-block text-danger"></p>
@@ -281,13 +283,13 @@
                 <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Enterate de nuevas noticias</h6>
                 <div class="w-100">
-                    <form class="input-group">
+                    <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="input-group">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Nuevo cliente interesado en noticias">
                         <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
-                        <input type="text" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Tú Email">
+                        <input type="email" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Tú Email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-3">Enviar email</button>
+                            <button type="submit" class="btn btn-primary px-3">Enviar email</button>
                         </div>
                     </form>
                 </div>
