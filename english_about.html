@@ -35,7 +35,9 @@
                     <div class="d-inline-flex align-items-center">
                         <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
                         <p class="text-body px-3">|</p>
-                        <p><a href="tel:+03434567890"><i class="fa fa-phone-alt mr-2"></i>+034 345 67890</a></p>
+                        <p><a href="tel:+034671625890"><i class="fa fa-phone-alt mr-2"></i>671 62 58 90</a></p>
+                        <p class="text-body px-3">|</p>
+                        <p><a href="tel:+034604836928"><i class="fa fa-phone-alt mr-2"></i>604 83 69 28</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
@@ -110,50 +112,55 @@
     <!-- Header End -->
 
 
-    <!-- Comienzo de la reserva -->
-    <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="Nuevo servicio extranjero">
-        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks.html">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="Email" required="required"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pick up date" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hour" data-toggle="datetimepicker" data-target="#time1" name="Hora" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="text" placeholder="Destination" class="form-control p-4 datetimepicker-input" name="Destino" required="required"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
+<!-- Comienzo de la reserva -->
+<form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Nuevo servicio">
+    <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks.html">
+    <input type="hidden" name="_cc" value="Fjcassa@gmail.com">
+    <div class="container pb-5"> <!-- Cambio aquí -->
+        <div class="bg-light shadow p-3">
+            <div class="row align-items-center">
+                <!-- Email input -->
+                <div class="col-md-2">
+                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="Email"
+                        required />
+                </div>
+                <!-- Fecha de recogida input -->
+                <div class="col-md-2">
+                    <input type='text' placeholder='Pick up date' 
+                           class='form-control p-4 datetimepicker-input'
+                           data-target='#date1' data-toggle='datetimepicker'
+                           name='Fecha de recogida' required />
+                </div>
+                <!-- Hora input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Hour'
+                           class='form-control p-4 datetimepicker-input'
+                           data-target='#time1' data-toggle='datetimepicker'
+                           name='Hora' required />
+                </div>
+                <!-- Origen input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Origin'
+                           class='form-control p-4 datetimepicker-input'
+                           name='Origen' required />
+                </div>
+                <!-- Destino input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Destination'
+                           class='form-control p-4 datetimepicker-input'
+                           name='Destino' required />
+                </div>
+                <!-- Submit button -->
+                <div class="col-md-2">
+                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
                 </div>
             </div>
         </div>
-    </form>
-    <!-- Fin de la reserva -->
+    </div>
+</form>
+<!-- Fin de la reserva -->
 
 
     <!-- Comienzo de sobre nosotros -->
@@ -258,6 +265,7 @@
                                 <input type="hidden" name="_template" value="table">
                                 <input type="hidden" name="_subject" value="Nuevo cliente extranjero registrado">
                                 <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks_registration.html">
+                                <input type="hidden" name="_cc" value="Fjcassa@gmail.com">
                                 <div class="form-group">
                                     <input type="text" name="Nombre" class="form-control p-4" placeholder="Your name" required="required" />
                                 </div>
@@ -298,10 +306,6 @@
                         <div class="team-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/avatar.webp" alt="">
                             <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div class="text-center py-4">
@@ -315,15 +319,11 @@
                         <div class="team-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src="img/avatar.webp" alt="">
                             <div class="team-social">
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Fran Casá Chamorro</h5>
-                            <p class="m-0">Letter ?</p>
+                            <h5 class="text-truncate">Fran Cassá Chamorro</h5>
+                            <p class="m-0">24 hours</p>
                         </div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow us</h6>
                 <div class="d-flex justify-content-start">
                     <a target="_blank" class="btn btn-outline-primary btn-square mr-2" href="https://api.whatsapp.com/send?phone=+34600999999&text=%C2%A1Buenas%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20de%20AeroTaxiSevilla%20a%20traves%20de%20Whatsapp!"><i class="fab fa-whatsapp"></i></a>
-                    <a target="_blank" class="btn btn-outline-primary btn-square" href="https://www.instagram.com/aerotaxisevilla/"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" class="btn btn-outline-primary btn-square mr-2" href="https://www.instagram.com/aerotaxisevilla/"><i class="fab fa-instagram"></i></a>
                     <a target="_blank" class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/profile.php?id=61560325577576"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
@@ -367,15 +367,16 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Sevilla</p>
-                <p><a href="tel:+03434567890"><i class="fa fa-phone-alt mr-2"></i>+034 345 67890</a></p>
+                <p><a href="tel:+034671625890"><i class="fa fa-phone-alt mr-2"></i>+034 671 62 58 90</a></p>
+                <p><a href="tel:+034604836928"><i class="fa fa-phone-alt mr-2"></i>+034 604 83 69 28</a></p>
                 <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Find out new news</h6>
                 <div class="w-100">
                     <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="input-group">
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Nuevo cliente extranjero interesado en noticias">
-                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/thanks_news.html">
+                        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks_news.html">
+                        <input type="hidden" name="_cc" value="Fjcassa@gmail.com">
                         <input type="email" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-primary px-3">Send email</button>

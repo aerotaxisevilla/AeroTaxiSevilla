@@ -35,7 +35,9 @@
                     <div class="d-inline-flex align-items-center">
                         <p><a href="mailto:aerotaxisevilla@gmail.com"><i class="fa fa-envelope mr-2"></i>aerotaxisevilla@gmail.com</a></p>
                         <p class="text-body px-3">|</p>
-                        <p><a href="tel:+03434567890"><i class="fa fa-phone-alt mr-2"></i>+034 345 67890</a></p>
+                        <p><a href="tel:+034671625890"><i class="fa fa-phone-alt mr-2"></i>671 62 58 90</a></p>
+                        <p class="text-body px-3">|</p>
+                        <p><a href="tel:+034604836928"><i class="fa fa-phone-alt mr-2"></i>604 83 69 28</a></p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
@@ -110,50 +112,55 @@
     <!-- Header End -->
 
 
-    <!-- Comienzo de la reserva -->
-    <form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="Nuevo servicio extranjero">
-        <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks.html">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="Email" required="required"/>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pick up date" data-target="#date1" data-toggle="datetimepicker" name="Fecha de recogida" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="time" id="time1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Hour" data-toggle="datetimepicker" data-target="#time1" name="Hora" required="required"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="text" placeholder="Destination" class="form-control p-4 datetimepicker-input" name="Destino" required="required"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
+<!-- Comienzo de la reserva -->
+<form action="https://formsubmit.co/aerotaxisevilla@gmail.com" method="post" class="container-fluid booking mt-5 pb-5">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="Nuevo servicio">
+    <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks.html">
+    <input type="hidden" name="_cc" value="Fjcassa@gmail.com">
+    <div class="container pb-5"> <!-- Cambio aquí -->
+        <div class="bg-light shadow p-3">
+            <div class="row align-items-center">
+                <!-- Email input -->
+                <div class="col-md-2">
+                    <input type="email" placeholder="Email" class="form-control p-4 datetimepicker-input" name="Email"
+                        required />
+                </div>
+                <!-- Fecha de recogida input -->
+                <div class="col-md-2">
+                    <input type='text' placeholder='Pick up date' 
+                           class='form-control p-4 datetimepicker-input'
+                           data-target='#date1' data-toggle='datetimepicker'
+                           name='Fecha de recogida' required />
+                </div>
+                <!-- Hora input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Hour'
+                           class='form-control p-4 datetimepicker-input'
+                           data-target='#time1' data-toggle='datetimepicker'
+                           name='Hora' required />
+                </div>
+                <!-- Origen input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Origin'
+                           class='form-control p-4 datetimepicker-input'
+                           name='Origen' required />
+                </div>
+                <!-- Destino input -->
+                <div class='col-md-2'>
+                    <input type='text' placeholder='Destination'
+                           class='form-control p-4 datetimepicker-input'
+                           name='Destino' required />
+                </div>
+                <!-- Submit button -->
+                <div class="col-md-2">
+                    <button class="btn btn-primary btn-block" type="submit">Submit</button>
                 </div>
             </div>
         </div>
-    </form>
-    <!-- Fin de la reserva -->
+    </div>
+</form>
+<!-- Fin de la reserva -->
 
 
     <!-- Testimonial Start -->
@@ -292,6 +299,7 @@
                         <input type="hidden" name="_template" value="table">
                         <input type="hidden" name="_subject" value="Nuevo cliente extranjero interesado en noticias">
                         <input type="hidden" name="_next" value="https://aerotaxisevilla.github.io/AeroTaxiSevilla/english_thanks_news.html">
+                        <input type="hidden" name="_cc" value="Fjcassa@gmail.com">
                         <input type="email" name="Email" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-primary px-3">Send email</button>
